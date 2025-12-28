@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz adaptativo | Repaso Espaciado UTPL</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="brand-badge" aria-hidden="true">
+        <i class="fa-solid fa-rectangle-list"></i>
+      </div>
+      <div>
+        <h1>Repaso Espaciado UTPL</h1>
+        <p>Prototipo digital representativo</p>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="diagnostico.html">Diagnóstico</a></li>
+        <li><a href="planificador.html">Planificador</a></li>
+        <li><a class="activo" href="quiz.html">Quiz</a></li>
+        <li><a href="progreso.html">Progreso</a></li>
+        <li><a href="recordatorios.html">Recordatorios</a></li>
+        <li><a href="biblioteca.html">Biblioteca</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <div class="container">
+
+    <section class="page-hero">
+      <div class="kicker"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> Quiz adaptativo (IA)</div>
+      <h2>Sesión de práctica de recuperación (simulada)</h2>
+      <p>
+        Esta pantalla representa un cuestionario adaptativo. No se procesa la respuesta.
+        Incluye tema, enunciado y un espacio para escribir.
+      </p>
+    </section>
+
+    <section class="grid cols-2">
+      <article class="card">
+        <h3>
+          <span class="icon" aria-hidden="true"><i class="fa-solid fa-book-open"></i></span>
+          Tema de estudio
+        </h3>
+
+        <div class="grid cols-2">
+          <div class="badge"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Materia: Sistemas Distribuidos</div>
+          <div class="badge"><i class="fa-solid fa-hashtag" aria-hidden="true"></i> Tema: Sincronización de relojes</div>
+        </div>
+
+        <div style="margin-top: 14px;">
+          <div class="label">Título de la pregunta</div>
+          <div class="input" style="background: rgba(2,6,23,0.02);">
+            Relación entre causalidad y sincronización de relojes físicos
+          </div>
+          <div class="hint">Ejemplo de pregunta generada para practicar comprensión y aplicación.</div>
+        </div>
+
+        <div style="margin-top: 14px;">
+          <div class="label">Enunciado</div>
+          <div class="input" style="background: rgba(2,6,23,0.02);">
+            Explica por qué la sincronización de relojes físicos es importante en sistemas distribuidos
+            y cómo puede afectar el orden de los eventos observados por diferentes nodos.
+          </div>
+        </div>
+
+        <div style="margin-top: 14px;">
+          <div class="label">Tu respuesta (escritura)</div>
+          <textarea placeholder="Escribe aquí tu respuesta..." aria-label="Respuesta del estudiante"></textarea>
+          <div class="hint">Prototipo: el texto no se evalúa; solo representa la interfaz.</div>
+        </div>
+
+        <div class="actions">
+          <button class="btn" type="button">
+            <i class="fa-solid fa-check-double" aria-hidden="true"></i>
+            Evaluar
+          </button>
+          <button class="btn sec" type="button">
+            <i class="fa-solid fa-shuffle" aria-hidden="true"></i>
+            Cambiar pregunta
+          </button>
+        </div>
+
+        <div style="margin-top: 12px;">
+          <span class="badge"><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Resultado simulado: “Dominio subió a Medio”.</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>
+          <span class="icon" aria-hidden="true"><i class="fa-solid fa-list-check"></i></span>
+          Preguntas tipo test (simuladas)
+        </h3>
+        <p class="sub">Ejemplos de preguntas de selección múltiple en la misma sesión.</p>
+
+        <div class="list">
+          <div class="list-item">
+            <div class="icon" aria-hidden="true"><i class="fa-solid fa-circle-question"></i></div>
+            <div class="meta">
+              <strong>1) ¿Qué problema principal busca resolver la sincronización de relojes?</strong>
+              <span>a) Reducir el consumo de red · b) Mantener coherencia temporal · c) Aumentar el almacenamiento</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="icon" aria-hidden="true"><i class="fa-solid fa-circle-question"></i></div>
+            <div class="meta">
+              <strong>2) ¿Qué factor puede causar deriva de reloj?</strong>
+              <span>a) Variación del oscilador · b) Tamaño del disco · c) Tipo de teclado</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="icon" aria-hidden="true"><i class="fa-solid fa-circle-question"></i></div>
+            <div class="meta">
+              <strong>3) ¿Cuál sería un riesgo de una mala sincronización?</strong>
+              <span>a) Desorden aparente de eventos · b) Mejora de latencia · c) Aumento de precisión de CPU</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          Repaso Espaciado UTPL — Quiz adaptativo (interfaz de prototipo).
+        </div>
+      </article>
+    </section>
+
+  </div>
+</main>
+
+</body>
+</html>

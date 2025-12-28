@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recordatorios | Repaso Espaciado UTPL</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="brand-badge" aria-hidden="true">
+        <i class="fa-solid fa-bell"></i>
+      </div>
+      <div>
+        <h1>Repaso Espaciado UTPL</h1>
+        <p>Prototipo digital representativo</p>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="diagnostico.html">Diagnóstico</a></li>
+        <li><a href="planificador.html">Planificador</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="progreso.html">Progreso</a></li>
+        <li><a class="activo" href="recordatorios.html">Recordatorios</a></li>
+        <li><a href="biblioteca.html">Biblioteca</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <div class="container">
+
+    <section class="page-hero">
+      <div class="kicker"><i class="fa-solid fa-bell-concierge" aria-hidden="true"></i> Recordatorios inteligentes</div>
+      <h2>Próximos repasos programados (simulados)</h2>
+      <p>
+        Esta pantalla representa una lista de recordatorios y una sección de configuración.
+        No envía notificaciones reales (prototipo).
+      </p>
+    </section>
+
+    <section class="grid cols-2">
+      <article class="card">
+        <h3>
+          <span class="icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></span>
+          Próximos recordatorios
+        </h3>
+        <p class="sub">Ejemplo de notificaciones futuras para repaso.</p>
+
+        <div class="list">
+          <div class="list-item">
+            <div class="icon" aria-hidden="true"><i class="fa-solid fa-calendar-day"></i></div>
+            <div class="meta">
+              <strong>29/12 — 19:00</strong>
+              <span>Redes de Computadores · TCP/IP y subredes · Repaso 2</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="icon" aria-hidden="true"><i class="fa-solid fa-calendar-day"></i></div>
+            <div class="meta">
+              <strong>31/12 — 09:00</strong>
+              <span>Bases de Datos · Normalización · Quiz corto</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="icon" aria-hidden="true"><i class="fa-solid fa-calendar-day"></i></div>
+            <div class="meta">
+              <strong>03/01 — 20:30</strong>
+              <span>Sistemas Distribuidos · Sincronización de relojes · Pregunta abierta</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="icon" aria-hidden="true"><i class="fa-solid fa-calendar-day"></i></div>
+            <div class="meta">
+              <strong>08/01 — 18:00</strong>
+              <span>Seguridad Informática · Amenazas web · Repaso mixto</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn" type="button">
+            <i class="fa-solid fa-bell" aria-hidden="true"></i>
+            Activar recordatorio
+          </button>
+          <button class="btn sec" type="button">
+            <i class="fa-solid fa-pen" aria-hidden="true"></i>
+            Editar horario
+          </button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>
+          <span class="icon" aria-hidden="true"><i class="fa-solid fa-sliders"></i></span>
+          Configuración (simulada)
+        </h3>
+        <p class="sub">Preferencias de recordatorios para el prototipo.</p>
+
+        <div class="grid cols-2">
+          <div class="field">
+            <div class="label">Frecuencia</div>
+            <select aria-label="Frecuencia">
+              <option>Solo en días de repaso</option>
+              <option>Diario</option>
+              <option>Cada 2 días</option>
+              <option>Semanal</option>
+            </select>
+            <div class="hint">Define con qué frecuencia te recuerda el sistema.</div>
+          </div>
+
+          <div class="field">
+            <div class="label">Anticipación</div>
+            <select aria-label="Anticipación">
+              <option>10 minutos antes</option>
+              <option>30 minutos antes</option>
+              <option>1 hora antes</option>
+              <option>1 día antes</option>
+            </select>
+            <div class="hint">Cuánto tiempo antes deseas el aviso.</div>
+          </div>
+
+          <div class="field">
+            <div class="label">Canal de aviso</div>
+            <select aria-label="Canal de aviso">
+              <option>Notificación del navegador</option>
+              <option>Correo institucional</option>
+              <option>Mensaje interno en la plataforma</option>
+            </select>
+            <div class="hint">Opciones de notificación (simuladas).</div>
+          </div>
+
+          <div class="field">
+            <div class="label">Hora preferida</div>
+            <input class="input" type="text" value="19:00" aria-label="Hora preferida" />
+            <div class="hint">Hora sugerida para recordatorios del día.</div>
+          </div>
+        </div>
+
+        <div class="badge" style="margin-top:12px;">
+          <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+          Prototipo: configuración visual sin envío real de alertas.
+        </div>
+
+        <div class="footer">
+          Repaso Espaciado UTPL — Recordatorios (interfaz de prototipo).
+        </div>
+      </article>
+    </section>
+
+  </div>
+</main>
+
+</body>
+</html>

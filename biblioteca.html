@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biblioteca | Repaso Espaciado UTPL</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="brand-badge" aria-hidden="true">
+        <i class="fa-solid fa-book"></i>
+      </div>
+      <div>
+        <h1>Repaso Espaciado UTPL</h1>
+        <p>Prototipo digital representativo</p>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="diagnostico.html">Diagnóstico</a></li>
+        <li><a href="planificador.html">Planificador</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="progreso.html">Progreso</a></li>
+        <li><a href="recordatorios.html">Recordatorios</a></li>
+        <li><a class="activo" href="biblioteca.html">Biblioteca</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <div class="container">
+
+    <section class="page-hero">
+      <div class="kicker"><i class="fa-solid fa-database" aria-hidden="true"></i> Biblioteca académica (RAG)</div>
+      <h2>Fuentes consultables por semestre (solo informativo)</h2>
+      <p>
+        Esta interfaz representa una biblioteca organizada por semestres y materias.
+        No hay enlaces ni consultas reales: es un prototipo representativo.
+      </p>
+    </section>
+
+    <section class="grid cols-2">
+      <article class="card">
+        <h3>
+          <span class="icon" aria-hidden="true"><i class="fa-solid fa-magnifying-glass"></i></span>
+          Buscador (simulado)
+        </h3>
+        <p class="sub">Ejemplo de búsqueda para contenidos académicos.</p>
+
+        <div class="field">
+          <div class="label">Buscar por tema o palabra clave</div>
+          <input class="input" type="text" placeholder="Ej.: sincronización de relojes, MVC, normalización..." />
+          <div class="hint">Prototipo: no devuelve resultados reales.</div>
+        </div>
+
+        <div class="list" style="margin-top: 12px;">
+          <div class="list-item">
+            <div class="icon" aria-hidden="true"><i class="fa-solid fa-file-lines"></i></div>
+            <div class="meta">
+              <strong>Resultado ejemplo: Apuntes</strong>
+              <span>Resumen de conceptos y definiciones (simulado).</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></div>
+            <div class="meta">
+              <strong>Resultado ejemplo: PDF</strong>
+              <span>Lecturas recomendadas por unidad (simulado).</span>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div class="icon" aria-hidden="true"><i class="fa-solid fa-book-open"></i></div>
+            <div class="meta">
+              <strong>Resultado ejemplo: Resumen</strong>
+              <span>Síntesis para repaso rápido (simulado).</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 12px;">
+          <span class="badge">
+            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+            Fuentes académicas consultables (sin implementar, solo prototipo).
+          </span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>
+          <span class="icon" aria-hidden="true"><i class="fa-solid fa-sitemap"></i></span>
+          Materias por semestre (desplegables)
+        </h3>
+        <p class="sub">Estructura informativa para navegación académica.</p>
+
+        <div class="grid">
+          <details>
+            <summary>
+              <span><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Primer semestre</span>
+              <span class="badge">Materias</span>
+            </summary>
+            <div class="details-body">
+              <ul>
+                <li>Fundamentos de Programación</li>
+                <li>Matemática Discreta</li>
+                <li>Introducción a Tecnologías de la Información</li>
+                <li>Comunicación Académica</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Segundo semestre</span>
+              <span class="badge">Materias</span>
+            </summary>
+            <div class="details-body">
+              <ul>
+                <li>Programación Orientada a Objetos</li>
+                <li>Estructuras de Datos</li>
+                <li>Arquitectura de Computadores</li>
+                <li>Estadística</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Tercer semestre</span>
+              <span class="badge">Materias</span>
+            </summary>
+            <div class="details-body">
+              <ul>
+                <li>Bases de Datos I</li>
+                <li>Sistemas Operativos</li>
+                <li>Redes de Computadores I</li>
+                <li>Ingeniería de Requisitos</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Cuarto semestre</span>
+              <span class="badge">Materias</span>
+            </summary>
+            <div class="details-body">
+              <ul>
+                <li>Arquitectura de Software</li>
+                <li>Bases de Datos II</li>
+                <li>Redes de Computadores II</li>
+                <li>Gestión de Proyectos</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Quinto semestre</span>
+              <span class="badge">Materias</span>
+            </summary>
+            <div class="details-body">
+              <ul>
+                <li>Sistemas Distribuidos</li>
+                <li>Seguridad Informática</li>
+                <li>Desarrollo Web</li>
+                <li>Calidad de Software</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Sexto semestre</span>
+              <span class="badge">Materias</span>
+            </summary>
+            <div class="details-body">
+              <ul>
+                <li>Computación en la Nube</li>
+                <li>DevOps y Automatización</li>
+                <li>Arquitecturas Distribuidas</li>
+                <li>Pruebas de Software</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Séptimo semestre</span>
+              <span class="badge">Materias</span>
+            </summary>
+            <div class="details-body">
+              <ul>
+                <li>Inteligencia Artificial</li>
+                <li>Minería de Datos</li>
+                <li>Seguridad en Aplicaciones Web</li>
+                <li>Gestión de Servicios de TI</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Octavo semestre</span>
+              <span class="badge">Materias</span>
+            </summary>
+            <div class="details-body">
+              <ul>
+                <li>Arquitectura Empresarial</li>
+                <li>Analítica Avanzada</li>
+                <li>Gestión de Riesgos Tecnológicos</li>
+                <li>Trabajo de Titulación</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+
+        <div class="footer">
+          Repaso Espaciado UTPL — Biblioteca (interfaz de prototipo).
+        </div>
+      </article>
+    </section>
+
+  </div>
+</main>
+
+</body>
+</html>

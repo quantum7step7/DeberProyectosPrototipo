@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planificador de repasos | Repaso Espaciado UTPL</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="brand-badge" aria-hidden="true">
+        <i class="fa-solid fa-calendar-check"></i>
+      </div>
+      <div>
+        <h1>Repaso Espaciado UTPL</h1>
+        <p>Prototipo digital representativo</p>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="diagnostico.html">Diagnóstico</a></li>
+        <li><a class="activo" href="planificador.html">Planificador</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="progreso.html">Progreso</a></li>
+        <li><a href="recordatorios.html">Recordatorios</a></li>
+        <li><a href="biblioteca.html">Biblioteca</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <div class="container">
+
+    <section class="page-hero">
+      <div class="kicker"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Planificador de repasos</div>
+      <h2>Calendario simulado de sesiones de repaso espaciado</h2>
+      <p>
+        Esta interfaz representa el plan sugerido tras el diagnóstico. Incluye fechas, temas y estado.
+        Los botones no ejecutan acciones reales (prototipo).
+      </p>
+    </section>
+
+    <section class="grid cols-2">
+      <article class="card">
+        <h3>
+          <span class="icon" aria-hidden="true"><i class="fa-solid fa-table"></i></span>
+          Tabla de planificación (simulada)
+        </h3>
+        <p class="sub">Ejemplo de un plan para un tema de la carrera de TI.</p>
+
+        <table class="table" aria-label="Planificador de repasos">
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Materia</th>
+              <th>Tema</th>
+              <th>Tipo de repaso</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>29/12</td>
+              <td>Arquitectura de Software</td>
+              <td>Capas, niveles y MVC</td>
+              <td>Repaso 1 (corto)</td>
+              <td><span class="status pendiente"><i class="fa-solid fa-clock" aria-hidden="true"></i> Pendiente</span></td>
+            </tr>
+            <tr>
+              <td>31/12</td>
+              <td>Arquitectura de Software</td>
+              <td>Capas, niveles y MVC</td>
+              <td>Repaso 2 (quiz)</td>
+              <td><span class="status pendiente"><i class="fa-solid fa-clock" aria-hidden="true"></i> Pendiente</span></td>
+            </tr>
+            <tr>
+              <td>03/01</td>
+              <td>Arquitectura de Software</td>
+              <td>Capas, niveles y MVC</td>
+              <td>Repaso 3 (profundización)</td>
+              <td><span class="status pendiente"><i class="fa-solid fa-clock" aria-hidden="true"></i> Pendiente</span></td>
+            </tr>
+            <tr>
+              <td>08/01</td>
+              <td>Arquitectura de Software</td>
+              <td>Capas, niveles y MVC</td>
+              <td>Repaso 4 (mixto)</td>
+              <td><span class="status completado"><i class="fa-solid fa-check" aria-hidden="true"></i> Completado</span></td>
+            </tr>
+            <tr>
+              <td>15/01</td>
+              <td>Arquitectura de Software</td>
+              <td>Capas, niveles y MVC</td>
+              <td>Repaso 5 (evaluación)</td>
+              <td><span class="status pendiente"><i class="fa-solid fa-clock" aria-hidden="true"></i> Pendiente</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="actions">
+          <button class="btn" type="button">
+            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+            Marcar repaso como completado
+          </button>
+          <button class="btn sec" type="button">
+            <i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i>
+            Reprogramar
+          </button>
+        </div>
+
+        <div style="margin-top: 12px;">
+          <span class="badge"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Prototipo: la tabla es demostrativa.</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>
+          <span class="icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></span>
+          Mini-calendario (simulado)
+        </h3>
+        <p class="sub">Vista rápida de sesiones programadas.</p>
+
+        <div class="grid cols-3">
+          <div class="card" style="box-shadow:none;">
+            <h3 style="margin-bottom:8px;">
+              <span class="icon" aria-hidden="true"><i class="fa-solid fa-1"></i></span>
+              Sesión 1
+            </h3>
+            <div class="small">29/12 — 25 min</div>
+            <div class="badge" style="margin-top:10px;">
+              <i class="fa-solid fa-book" aria-hidden="true"></i> Lectura + recordatorio
+            </div>
+          </div>
+
+          <div class="card" style="box-shadow:none;">
+            <h3 style="margin-bottom:8px;">
+              <span class="icon" aria-hidden="true"><i class="fa-solid fa-2"></i></span>
+              Sesión 2
+            </h3>
+            <div class="small">31/12 — 15 min</div>
+            <div class="badge" style="margin-top:10px;">
+              <i class="fa-solid fa-list-ol" aria-hidden="true"></i> Quiz corto
+            </div>
+          </div>
+
+          <div class="card" style="box-shadow:none;">
+            <h3 style="margin-bottom:8px;">
+              <span class="icon" aria-hidden="true"><i class="fa-solid fa-3"></i></span>
+              Sesión 3
+            </h3>
+            <div class="small">03/01 — 25 min</div>
+            <div class="badge" style="margin-top:10px;">
+              <i class="fa-solid fa-pen" aria-hidden="true"></i> Pregunta abierta
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          Repaso Espaciado UTPL — Planificador de repasos (interfaz de prototipo).
+        </div>
+      </article>
+    </section>
+
+  </div>
+</main>
+
+</body>
+</html>

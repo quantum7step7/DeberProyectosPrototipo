@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel de progreso | Repaso Espaciado UTPL</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="brand-badge" aria-hidden="true">
+        <i class="fa-solid fa-chart-pie"></i>
+      </div>
+      <div>
+        <h1>Repaso Espaciado UTPL</h1>
+        <p>Prototipo digital representativo</p>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="diagnostico.html">Diagnóstico</a></li>
+        <li><a href="planificador.html">Planificador</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a class="activo" href="progreso.html">Progreso</a></li>
+        <li><a href="recordatorios.html">Recordatorios</a></li>
+        <li><a href="biblioteca.html">Biblioteca</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <div class="container">
+
+    <section class="page-hero">
+      <div class="kicker"><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Panel de dominio y progreso</div>
+      <h2>Seguimiento de avance por temas (simulado)</h2>
+      <p>
+        Aquí se observa el progreso por materias y temas de Tecnologías de la Información.
+        Las barras y niveles son demostrativos (prototipo).
+      </p>
+    </section>
+
+    <section class="grid cols-2">
+      <article class="card">
+        <h3>
+          <span class="icon" aria-hidden="true"><i class="fa-solid fa-gauge-high"></i></span>
+          Dominio general
+        </h3>
+        <p class="sub">Resumen del estado actual (simulado).</p>
+
+        <div class="badge" style="margin-bottom:12px;">
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          Dominio general: Medio (aprox. 62%)
+        </div>
+
+        <div class="progress" aria-label="Progreso general">
+          <span style="width:62%;"></span>
+        </div>
+
+        <div class="small" style="margin-top:10px;">
+          Recomendación simulada: priorizar temas con nivel “Bajo” antes del próximo repaso.
+        </div>
+
+        <div class="footer">
+          Repaso Espaciado UTPL — Panel de progreso (interfaz de prototipo).
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>
+          <span class="icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></span>
+          Progreso por temas (6 temas)
+        </h3>
+        <p class="sub">Ejemplo con contenidos típicos de la carrera.</p>
+
+        <div class="progress-row">
+          <div>
+            <strong>Redes de Computadores</strong>
+            <div class="small">TCP/IP y subredes</div>
+          </div>
+          <div class="progress"><span style="width:45%;"></span></div>
+          <div class="badge"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Bajo</div>
+        </div>
+
+        <div class="progress-row">
+          <div>
+            <strong>Bases de Datos</strong>
+            <div class="small">Normalización (1FN–3FN)</div>
+          </div>
+          <div class="progress"><span style="width:58%;"></span></div>
+          <div class="badge"><i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i> Medio</div>
+        </div>
+
+        <div class="progress-row">
+          <div>
+            <strong>Sistemas Operativos</strong>
+            <div class="small">Planificación de CPU</div>
+          </div>
+          <div class="progress"><span style="width:70%;"></span></div>
+          <div class="badge"><i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i> Medio</div>
+        </div>
+
+        <div class="progress-row">
+          <div>
+            <strong>Arquitectura de Software</strong>
+            <div class="small">Capas, niveles y MVC</div>
+          </div>
+          <div class="progress"><span style="width:78%;"></span></div>
+          <div class="badge"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Alto</div>
+        </div>
+
+        <div class="progress-row">
+          <div>
+            <strong>Seguridad Informática</strong>
+            <div class="small">Ataques y mitigación</div>
+          </div>
+          <div class="progress"><span style="width:52%;"></span></div>
+          <div class="badge"><i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i> Medio</div>
+        </div>
+
+        <div class="progress-row">
+          <div>
+            <strong>Sistemas Distribuidos</strong>
+            <div class="small">Sincronización de relojes</div>
+          </div>
+          <div class="progress"><span style="width:40%;"></span></div>
+          <div class="badge"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Bajo</div>
+        </div>
+      </article>
+    </section>
+
+  </div>
+</main>
+
+</body>
+</html>
